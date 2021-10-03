@@ -19,4 +19,4 @@ def calculate_avg_rating(reviews: t.List[Review]) -> float:
     sum = 0.0
     for review in reviews:
         sum += review.rating
-    return round(sum / len(reviews), 2)
+    return round(sum / len(reviews), 2)   

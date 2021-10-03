@@ -7,11 +7,10 @@
 # If the list of reviews is empty, return an empty dictionary
 # Make sure that you add type hints to the function paramter and return value
 
-import typing as t
 from app.src.Review import Review
 from app.src.utils import calculate_avg_rating
 
-def calc_avg_rating(reviews: t.List[Review]) -> dict[str, float]:
+def calc_avg_rating(reviews: list[Review]) -> dict[str, float]:
     if len(reviews) == 0:
         return {}
 
@@ -30,10 +29,5 @@ def calc_avg_rating(reviews: t.List[Review]) -> dict[str, float]:
         avg_rating = calculate_avg_rating(reviews)
         restaurant_avg_rating[restaurant] = avg_rating
     return restaurant_avg_rating
-    """""
-    for restaurant, rating in restaurant_name.items():
-        avg_rating = calculate_avg_rating(rating)
-        restaurant_avg_rating[restaurant] = avg_rating
-    return restaurant_avg_rating
-    """
+   
 

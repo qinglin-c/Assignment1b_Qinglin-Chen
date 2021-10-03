@@ -19,7 +19,7 @@ class TestRatingcalc(unittest.TestCase):
             'Restaurant a': 4.9,
             'Restaurant b': 4.4,
             'Restaurant c': 2.1
-        }
+        }   
 
 
         actual = calc_avg_rating(input)

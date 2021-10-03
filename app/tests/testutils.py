@@ -16,3 +16,4 @@ class TestUtils(unittest.TestCase):
         expect = 4.9
         self.assertEqual(expect, actual)
         self.assertTrue(isinstance(actual, float))
+   
